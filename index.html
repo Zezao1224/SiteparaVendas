@@ -6,63 +6,86 @@
 		<title>DESIGNER</title>
 		<style type="text/css">
 			body{
-				font-family: arial;
-				font-size: 18px;
-				background-image: url(imagem/testefundo.jpg);
-				background-size: cover;
+				margin:0;				
+			}
+			a:link{
+				text-decoration: none;
+			}
+			#topo{
+				text-align: center;
+				display: grid;
+				grid-template-areas: "logo conta";
+				background: #000;
+				margin-top: 0px;
+				height: 230px;
+			}
+			.logo{
+				float: left;
+				margin-top: -40px;
+			}
+			.menuprincipal{
+				display:block;
+				height: 82px;
+				width: 500px;
+				text-align: center;
+				padding-top: 20px;
+			}
+			#perfil{
+				background-image: url(imagem/perfil.png);
 				background-repeat: no-repeat;
-				background-position: center;
-				height: 100%;
-				width: 100%;
-				margin:0;
+				float: left;
+				padding-left: 30px;
+				margin-right: 15px;
 			}
-			#topo{ 
-				text-align: center;
-				margin: 0;
-				height: 800px;
-			}
-			#navegador{
-				text-align: center;
-				height: 500px;
-				padding-top: 50px; 	
-			}
-			#rodape{
-				text-align: center;
-				color: #fff;
-				padding-top: 5px;
-				padding-bottom: 60px;
-			}
-			hr{
-				max-width: 90%;
-			}
-			#manutençao{
-				background-image: url(imagem/placa.png);
+			#pedidos{
+				background-image: url(imagem/pedidos.png);
 				background-repeat: no-repeat;
-				background-position: center;
-				text-align: center;
-				height: 550px;
+				float: left;
+				padding-left: 30px;
 			}
-			@font-face{
-				font-family: 'Ranille';
-				src: local('Ranille'), url('Ranille.otf');
+			#menu1 ul li{
+				list-style: none;
+				text-align: center;
+			}
+			.busca{
+				
+				width: 490px;
+				margin: -20px;
+				padding-top: 20px;
+				text-align: center;
+			}
+			.barradebusca{
+			margin-top: 50px;
+			}
+			.buscas{
+				text-align: center;
+			}
+			.carrihno{
+
 			}
 		</style>
 	</head>
 	<body>
 		<div id="topo">
-			<figure>	
-				<img src="imagem/logo.png" height="800" width="800" align="top">
-			</figure>
+			<div class="logo">
+				<img src="imagem/Logo.png" width="400" height="400" align="top">
+			</div>
+			<div class="menuprincipal">
+				<div class="menu1">
+					<ul>
+						<li id="perfil">
+							<a href="" style="color: #fff">Login | Cadastre-se</a>
+						</li>
+						<li id="pedidos">
+							<a href="" style="color: #fff">Meus Pedidos</a>
+						</li>
+					</ul>
+					<input class="barradebusca" type="text" name="barradebusca" style="border-style: solid" width="250" size="60">
+					<input class="buscas" type="button" name="buscar" value="Buscar" style="width: 60px" ><br>
+				</div>
+			</div>		
 		</div>
-		<div id="manutençao">
-		</div>
-		<div id="rodape">
-			<footer>
-			   	<h2><font face="Ranille">Contato</font></h2>
-			    <hr color="#00FF00">
-			    <img src="imagem/gmail.png " height="35" width="40" id="gmail">
-			    <font size="5" face="Ranille">email: contato@gamplus.com.br<br></font>
-			</footer>
-		</div>  
+			
+ 
 	</body>
 </html>
