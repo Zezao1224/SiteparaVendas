@@ -8,10 +8,11 @@
 			body{
 				margin:0;				
 			}
+			/*topo*/
 			a:link{
 				text-decoration: none;
 			}
-			#topo{
+			.topo{
 				text-align: center;
 				display: grid;
 				grid-template-areas: "logo conta";
@@ -30,20 +31,20 @@
 				text-align: center;
 				padding-top: 20px;
 			}
-			#perfil{
+			.perfil{
 				background-image: url(imagem/perfil.png);
 				background-repeat: no-repeat;
 				float: left;
 				padding-left: 30px;
 				margin-right: 15px;
 			}
-			#pedidos{
+			.pedidos{
 				background-image: url(imagem/pedidos.png);
 				background-repeat: no-repeat;
 				float: left;
 				padding-left: 30px;
 			}
-			#menu1 ul li{
+			.menu1 ul li{
 				list-style: none;
 				text-align: center;
 			}
@@ -61,31 +62,136 @@
 				text-align: center;
 			}
 			.carrihno{
-
+			}
+			/*barra*/
+			.barrademenu{
+				display: inline-block;
+				text-align: center;
+				padding-top: 200px;
+				padding-left: 60px;
+			}
+			.barrademenu ul li{
+				background-color: #000;
+				color:#fff;
+				float: left;
+				width: 200px;
+				height: 40px;
+				display: inline-block;
+				text-align: center;
+				line-height: 40px;
+				font-size: 20px;
+				font-family: arial;
+			}
+			.barrademenu ul li:hover{
+				background-color: #333;
+			}
+			.barrademenu ul li a {
+			    color: #fff;
+			    text-decoration: none;
+			}
+			.barrademenu ul li a:hover{
+				background:#333;
+				color:#fff;
+				text-shadow: 0px 0px 5px #00FF00;
+			}
+			.barrademenu ul{
+				padding: 0;
+			}
+			.barrademenu ul ul{
+				display: none;
+			}
+			.barrademenu ul li:hover > ul{
+				display: block;
+			}
+			#fundobarrademenu{
+				background-color: #228B22;
+				height: 450px;
 			}
 		</style>
 	</head>
 	<body>
-		<div id="topo">
-			<div class="logo">
-				<img src="imagem/Logo.png" width="400" height="400" align="top">
+		<!--topo--> 
+			<div class="topo">
+				<div class="logo">
+					<img src="imagem/Logo.png" width="400" height="400" align="top">
+				</div>
+				<div class="menuprincipal">
+					<div class="menu1">
+						<ul>
+							<li class="perfil">
+								<a href="" style="color: #fff">Login | Cadastre-se</a>
+							</li>
+							<li class="pedidos">
+								<a href="" style="color: #fff">Meus Pedidos</a>
+							</li>
+						</ul>
+						<input class="barradebusca" type="text" name="barradebusca" style="border-style: solid" width="250" size="60">
+						<input class="buscas" type="button" name="buscar" value="Buscar" style="width: 60px" ><br>
+					</div>
+				</div>		
 			</div>
-			<div class="menuprincipal">
-				<div class="menu1">
+		<!--menu-->
+			<div id="fundobarrademenu">
+				<nav class="barrademenu">
 					<ul>
-						<li id="perfil">
-							<a href="" style="color: #fff">Login | Cadastre-se</a>
+						<li>Produto1
+							<ul>
+								<li><a href="">Sub-produto1</a></li>
+								<li><a href="">Sub-produto2</a></li>
+								<li><a href="">Sub-produto3</a></li>
+								<li><a href="">Sub-produto4</a></li>
+							</ul>
 						</li>
-						<li id="pedidos">
-							<a href="" style="color: #fff">Meus Pedidos</a>
+						<li>Produto2
+							<ul>
+								<li><a href="">Sub-produto1</a></li>
+								<li><a href="">Sub-produto2</a></li>
+								<li><a href="">Sub-produto3</a></li>
+								<li><a href="">Sub-produto4</a></li>
+							</ul>
+						</li>
+						<li>Produto3
+							<ul>
+								<li><a href="">Sub-produto1</a></li>
+								<li><a href="">Sub-produto2</a></li>
+								<li><a href="">Sub-produto3</a></li>
+								<li><a href="">Sub-produto4</a></li>
+							</ul>
+						</li>
+						<li>Produto4
+							<ul>
+								<li><a href="">Sub-produto1</a></li>
+								<li><a href="">Sub-produto2</a></li>
+								<li><a href="">Sub-produto3</a></li>
+								<li><a href="">Sub-produto4</a></li>
+							</ul>
+						</li>
+						<li>Produto5
+							<ul>
+								<li><a href="">Sub-produto1</a></li>
+								<li><a href="">Sub-produto2</a></li>
+								<li><a href="">Sub-produto3</a></li>
+								<li><a href="">Sub-produto4</a></li>
+							</ul>
+						</li>
+						<li>Produto6
+							<ul>
+								<li><a href="">Sub-produto1</a></li>
+								<li><a href="">Sub-produto2</a></li>
+								<li><a href="">Sub-produto3</a></li>
+								<li><a href="">Sub-produto4</a></li>
+							</ul>
+						</li>
+						<li>Produto7
+							<ul>
+								<li><a href="">Sub-produto1</a></li>
+								<li><a href="">Sub-produto2</a></li>
+								<li><a href="">Sub-produto3</a></li>
+								<li><a href="">Sub-produto4</a></li>
+							</ul>
 						</li>
 					</ul>
-					<input class="barradebusca" type="text" name="barradebusca" style="border-style: solid" width="250" size="60">
-					<input class="buscas" type="button" name="buscar" value="Buscar" style="width: 60px" ><br>
-				</div>
-			</div>		
-		</div>
-			
- 
+				</nav>
+			</div>
 	</body>
 </html>
